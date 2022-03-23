@@ -1,0 +1,10 @@
+.banner {
+    background-image: url("../public/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.button {
+    background: linear-gradient(55deg, rgba(146, 140, 243, 1) 0%, rgba(96, 126, 241, 1) 100%);
+}
