@@ -4,8 +4,9 @@ import Layout from '../component/Layout'
 import Navigation from '../component/Navigation'
 import { COUNTRY_LIST } from '../constant/COUNTRY_LIST'
 import { PHONE_CODE } from '../constant/PHONE_CODE'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { string } from 'yup'
+import axios from 'axios'
 
 interface MySelectProps {
   className: string
@@ -26,8 +27,13 @@ const MySelect = ({ ...props }: MySelectProps) => {
 }
 
 const Contact: NextPage = () => {
-  const handleSubmitForm = (values: any) => {
+  const [submitted, setSubmitted] = useState(false)
+  const handleSubmitForm = async (values: any) => {
     console.log('values', values)
+    try {
+      const result = await axios.post('/api/contact', { email: values.email })
+      setSubmitted(true)
+    } catch (error) {}
   }
 
   const phoneCodes = useMemo(() => {
@@ -51,7 +57,7 @@ const Contact: NextPage = () => {
           <div className="container mx-auto grid gap-10 md:gap-20 lg:max-w-container lg:grid-cols-2">
             <div>
               <img
-                src="/images/Logo_2.png"
+                src="/images/logo_2.png"
                 className="md:w-12/12 w-7/12"
                 alt=""
                 width=""
@@ -130,6 +136,9 @@ const Contact: NextPage = () => {
                           onBlur={handleBlur}
                           value={values.email}
                         />
+                        {errors.email && (
+                          <span className="text-red-500">{errors.email}</span>
+                        )}
                       </label>
                     </div>
                     <div className="mt-7">
@@ -256,11 +265,12 @@ const Contact: NextPage = () => {
                         <br />
                         <textarea
                           placeholder="Input your message"
-                          className="outline-none mt-1 h-40 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
                           name="message"
                           onChange={handleChange}
                           onBlur={handleBlur}
                           value={values.message}
+                          rows={3}
                         />
                       </label>
                     </div>
@@ -268,11 +278,14 @@ const Contact: NextPage = () => {
                       className="button mt-7 rounded-md px-7 py-3 text-white"
                       type="submit"
                     >
-                      submit
+                      Submit
                     </button>
                   </form>
                 )}
               </Formik>
+              {submitted && (
+                <div className="text text-green-600">Thank you</div>
+              )}
             </div>
           </div>
         </div>
