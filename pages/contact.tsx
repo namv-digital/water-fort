@@ -57,7 +57,7 @@ const Contact: NextPage = () => {
           <div className="container mx-auto grid gap-10 md:gap-20 lg:max-w-container lg:grid-cols-2">
             <div>
               <img
-                src="/images/logo_2.png"
+                src="/images/Logo_2.png"
                 className="md:w-12/12 w-7/12"
                 alt=""
                 width=""
