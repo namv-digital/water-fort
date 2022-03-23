@@ -5,8 +5,15 @@ import Navigation from '../component/Navigation'
 import { COUNTRY_LIST } from '../constant/COUNTRY_LIST'
 import { PHONE_CODE } from '../constant/PHONE_CODE'
 import { useMemo } from 'react'
+import { string } from 'yup'
 
-const MySelect = ({ ...props }) => {
+interface MySelectProps {
+  className: string
+  name: string
+  children: React.ReactNode
+}
+
+const MySelect = ({ ...props }: MySelectProps) => {
   const [field, meta] = useField(props)
   return (
     <div>
