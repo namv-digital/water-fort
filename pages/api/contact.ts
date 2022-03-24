@@ -25,7 +25,7 @@ export default async function handler(
     // verify connection configuration
     transporter.verify(function (error: any, success: any) {
       if (error) {
-        console.log(error)
+        console.log('verify error', error)
         reject(error)
       } else {
         console.log('Server is ready to take our messages')
@@ -47,7 +47,7 @@ export default async function handler(
       // send mail
       transporter.sendMail(mailData, (err: any, info: any) => {
         if (err) {
-          console.error(err)
+          console.error('send error', err)
           reject(err)
         } else {
           console.log(info)
