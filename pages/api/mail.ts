@@ -1,13 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
-import Nylas from 'nylas'
-
-Nylas.config({
-  clientId: process.env.NYLAS_CLIENT_ID || '',
-  clientSecret: process.env.NYLAS_CLIENT_SECRET || '',
-})
-
-const nylas = Nylas.with(process.env.NYLAS_ACCESS_TOKEN || '')
 
 type Data = {
   success: boolean
@@ -17,6 +9,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
+  const Nylas = require('nylas')
+
+  Nylas.config({
+    clientId: process.env.NYLAS_CLIENT_ID,
+    clientSecret: process.env.NYLAS_CLIENT_SECRET,
+  })
+
+  const nylas = Nylas.with(process.env.NYLAS_ACCESS_TOKEN)
+
   try {
     const draft = nylas.drafts.build({
       subject: 'Contact Request',
