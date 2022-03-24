@@ -25,7 +25,7 @@ export default async function handler(
       body: `Contact form from ${req.body.email}`,
     })
 
-    const result = draft.send()
+    const result = await draft.send()
 
     res.status(200).json({ success: true })
   } catch (error: any) {
