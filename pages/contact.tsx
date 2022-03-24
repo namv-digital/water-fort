@@ -31,7 +31,7 @@ const Contact: NextPage = () => {
   const handleSubmitForm = async (values: any) => {
     console.log('values', values)
     try {
-      const result = await axios.post('/api/contact', { email: values.email })
+      const result = await axios.post('/api/mail', { email: values.email })
       setSubmitted(true)
     } catch (error) {}
   }
