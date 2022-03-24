@@ -29,6 +29,8 @@ export default async function handler(
 
     res.status(200).json({ success: true })
   } catch (error: any) {
+    console.log("error", error)
+    console.info(error)
     res.status(200).json({ success: false })
   }
 }
