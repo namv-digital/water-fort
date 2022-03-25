@@ -7,9 +7,11 @@ const About: NextPage = () => {
   return (
     <div>
       <Layout>
-        <div className='bg-fill pb-28'>
+        <div className="bg-fill pb-28">
           <Navigation />
-          <h1 className='container mx-auto lg:max-w-container text-4xl font-bold text-primary mt-14 md:mt-20  px-5 md:px-0'>About</h1>
+          <div className="container mx-auto mt-16 px-5 md:mt-91px md:px-0 lg:max-w-container">
+            <h1 className="text-4xl font-bold text-primary">About</h1>
+          </div>
         </div>
         <Body />
       </Layout>
@@ -18,4 +20,3 @@ const About: NextPage = () => {
 }
 
 export default About
-

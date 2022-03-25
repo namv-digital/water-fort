@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+    @font-face {
+        font-family: 'Saol-text';
+        src: url('../fonts/saol/SaolTextRegular.woff') format('woff');
+        font-weight: 400;
+        font-display: swap;
+        font-style: normal;
+    }
+}

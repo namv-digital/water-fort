@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <title>Water Fort</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className='font-saolText'>
         <main>{children}</main>
         <Footer />
       </div>

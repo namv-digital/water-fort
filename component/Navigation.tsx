@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <div>
       <div className="container mx-auto hidden space-x-50.95px py-6 px-5  md:flex md:px-0 lg:max-w-container">
-        <div>
+        <div className='cursor-pointer'>
           <Link href="/">
             <img src="/images/Logo.png" alt="" width="147.05px" />
           </Link>
@@ -16,7 +16,7 @@ const Navigation = () => {
             <Link href="/about">About</Link>
           </div>
           <div className="my-auto mr-8">
-            <Link href="/solutions/OTC and Block Trading">Solutions</Link>
+            <Link href="/solutions">Solutions</Link>
           </div>
           <div className="my-auto mr-8">
             <Link href="/contact">Contact</Link>
