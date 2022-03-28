@@ -12,7 +12,6 @@ interface MySelectProps {
   name: string
   children: React.ReactNode
 }
-
 const ContactSchema = Yup.object().shape({
   name: Yup.string().required('Required'),
   country: Yup.string().required('Required'),
@@ -31,7 +30,7 @@ const MySelect = ({ ...props }: MySelectProps) => {
 const Contact: NextPage = () => {
   const [submitted, setSubmitted] = useState(false)
   const handleSubmitForm = async (values: any) => {
-    const { email, name, phone, telegram, company, country, interests } = values
+    const { email, name, phone, telegram, company, country, interests, message } = values
     try {
       const result = await axios.post('/api/contact', {
         email,
@@ -41,9 +40,10 @@ const Contact: NextPage = () => {
         company,
         country,
         interests: interests.join(','),
+        message
       })
       setSubmitted(true)
-    } catch (error) {}
+    } catch (error) { }
   }
 
   return (
@@ -269,7 +269,10 @@ const Contact: NextPage = () => {
                 )}
               </Formik>
               {submitted && (
-                <div className="text text-green-600">Thank you</div>
+               <div className='text-center fixed bg-white p-5 border right-1 md:right-96 modal'>
+                 <p className='text-green-600'>Contact request submitted! We will get back to you as soon as possible.</p>
+                 <button onClick={()=> setSubmitted(!submitted)} className='button px-7 py-1 rounded-sm text-white mt-5'>Ok</button>
+               </div>
               )}
             </div>
           </div>
