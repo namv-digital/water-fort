@@ -1,21 +1,29 @@
 .banner {
-    background-image: url("../public/images/bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  background-image: url('../public/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .button {
-    background: linear-gradient(55deg, rgba(146, 140, 243, 1) 0%, rgba(96, 126, 241, 1) 100%);
+  background: linear-gradient(
+    55deg,
+    rgba(146, 140, 243, 1) 0%,
+    rgba(96, 126, 241, 1) 100%
+  );
 }
 
 /* modal animation */
-.modal{
-    top : -400px;
-    animation: drop 0.5s ease forwards;
+.modal {
+  top: calc(-50vh - 80px);
+  animation: drop 0.5s ease forwards;
 }
-@keyframes drop{
-    0%{opacity: 0;};
-    70%{transform: translateY(700px);}
-    100%{transform: translateY(450px); opacity: 1;}
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
 }

@@ -268,9 +268,9 @@ const Contact: NextPage = () => {
                   </form>
                 )}
               </Formik>
-              {submitted && (
-               <div className='text-center fixed bg-white p-5 border right-1 md:right-96 modal'>
-                 <p className='text-green-600'>Contact request submitted! We will get back to you as soon as possible.</p>
+              {(submitted) && (
+               <div className='text-center fixed bg-white p-5 border inset-x-0 sm:w-10/12 lg:w-7/12 xl:w-5/12 mx-auto modal shadow'>
+                 <p className='text-primary'>Contact request submitted! We will get back to you as soon as possible.</p>
                  <button onClick={()=> setSubmitted(!submitted)} className='button px-7 py-1 rounded-sm text-white mt-5'>Ok</button>
                </div>
               )}

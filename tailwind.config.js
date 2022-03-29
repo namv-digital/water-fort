@@ -51,6 +51,9 @@ module.exports = {
       fontFamily:{
        "saolText" : "Saol-text"
       },
+      inset: {
+        '3px': '3px',
+      }
     },
   },
   plugins: [],
