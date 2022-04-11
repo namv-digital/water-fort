@@ -23,12 +23,15 @@ module.exports = {
          '56.59px' : '56.59px'
       },
       colors : {
-        "primary" : "#26292C",
+        "primary" : "#11263F",
         'seccondery' : "#565C64",
         "demo" : "#617FF2",
         'button' : "#7183F3",
         'fill' : "#F5F7FF",
-        'third' : "#848E9C"
+        'third' : "#848E9C",
+        'banner' : "#F5F5F5",
+        "blue-gray" : "#465567",
+        'ring-color' : "#0095B8"
       },
       lineHeight : {
         "3.5rem" : "3.5rem"
@@ -53,6 +56,15 @@ module.exports = {
       },
       inset: {
         '3px': '3px',
+      },
+      backgroundImage: {
+         'about-banner' : "url('/images/stock-photo--d-binary-tunnel-background-data-stream-concept-96438890 1.png')",
+         'solution-banner' : "url('/images/shutterstock_761874310 1.png')",
+         'contact-banner' : "url('/images/contact-bg.png')"
+      },
+      gridTemplateColumns: {
+        'about' : 'repeat(2, minmax(0, max-content))',
+        '1fr-2fr': '1fr 2fr'
       }
     },
   },

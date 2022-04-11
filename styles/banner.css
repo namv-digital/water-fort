@@ -12,10 +12,19 @@
     rgba(96, 126, 241, 1) 100%
   );
 }
+.HomeBottom{
+  background: url('../public/images/shutterstock_2132170515 1.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.solution-bottom{
+  background:  linear-gradient(135deg, rgba(96,201,226,0.7791491596638656) 0%, rgba(1,149,184,1) 100%);
+}
 
 /* modal animation */
 .modal {
-  top: calc(-50vh - 80px);
+  top: 25%;
   animation: drop 0.5s ease forwards;
 }
 @keyframes drop {
@@ -23,7 +32,6 @@
     opacity: 0;
   }
   100% {
-    transform: translateY(100vh);
     opacity: 1;
   }
 }

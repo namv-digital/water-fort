@@ -4,7 +4,7 @@ export const about =[
         discription : "WaterFort’s key offering is reliable liquidity throughout volatile markets, ensuring you minimize slippage and execution costs with our OTC liquidity and execution algos. We integrate our liquidity directly into your existing risk management systems to ensure seamless execution and risk management. "
     },
     {
-        title : "Corporate Treasury ",
+        title : "Corporate Treasury",
         discription : "For Corporate Treasurers, WaterFort ensures that you have the right tools needed for transparent reporting of trades while achieving the most efficient execution for all your trades. "
     },
     {

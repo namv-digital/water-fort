@@ -4,15 +4,18 @@ import { service } from '../../constant/SERVICE_MOCK_DATA'
 const HomeMiddle = () => {
   return (
     <div>
-      <div className="-mt-16 grid gap-10 rounded-large bg-white py-20 lg:grid-cols-3 lg:px-120px">
+      <div className=" grid gap-10 bg-white py-20 lg:grid-cols-3 lg:px-120px">
         {service.map((service) => (
-          <div className="text-center">
-            <img src={service.img} alt="" className="mx-auto" />
-            <h2 className="mt-27px text-2xl font-bold text-primary">
+          <div className='text-center md:text-left'>
+            <img src={service.img} alt="" className="mx-auto md:mx-0" />
+            <h2 className="mt-27px text-2xl font-bold text-primary md:w-9/12">
               {service.name}
             </h2>
+            <p className='text-base text-blue-gray mt-2'>
+              {service.discription}
+            </p>
             <Link href={service.link}>
-              <button className="mx-auto mt-10 flex rounded-md border-2 border-button px-6 py-2 text-button">
+              <button className="mt-6 flex mx-auto md:mx-0 bg-primary px-6 py-2 text-white">
                 Find Out More
                 <img
                   src="/images/icon/arrow.png"

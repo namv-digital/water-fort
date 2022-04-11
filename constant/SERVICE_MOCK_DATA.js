@@ -1,17 +1,20 @@
 export const service = [
    { 
-       name : "OTC and Block Trading",
+       name : "OTC AND BLOCK TRADING",
        link : "/solutions#otc-blocking-trading",
-       img : "/images/icon/wallet.jpg"
+       img : "/images/icon/otc-trading.png",
+       discription : "Competitive quotes across the widest range of cryptocurrencies"
    },
    {
-       name : "Order Book Market Making",
+       name : "ORDER BOOK MARKET MAKING",
        link : "/solutions#order-book",
-       img : "/images/icon/Trade.jpg"
+       img : "/images/icon/marketMaking.png",
+       discription : "Reliable deep liquidity 24/7 and competitive spreads"
    },
    {
-       name : "Algorithmic Execution Orders",
+       name : "ALGORITHMIC EXECUTION ORDER",
        link : "/solutions#algorithmic",
-       img : "/images/icon/AI.jpg"
+       img : "/images/icon/Al.png",
+       discription : "Optimize execution, reduce executioncost and market impact",
    }
 ]

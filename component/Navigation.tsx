@@ -1,25 +1,27 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 
 const Navigation = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const route = useRouter();
   return (
-    <div>
-      <div className="container mx-auto hidden space-x-50.95px py-6 px-5  md:flex md:px-0 lg:max-w-container">
-        <div className='cursor-pointer'>
+    <div className='bg-white py-5'>
+      <div className="container mx-auto hidden justify-between  px-5  md:flex md:px-0 lg:max-w-container">
+        <div className='cursor-pointer flex items-center'>
           <Link href="/">
-            <img src="/images/Logo.png" alt="" width="147.05px" />
+            <img src="/images/Logo.png" alt="" width="40%" />
           </Link>
         </div>
         <div className="font-semibold text-seccondery md:flex">
-          <div className="my-auto mr-8">
-            <Link href="/about">About</Link>
+          <div className="my-auto mr-10">
+            <Link href="/about"><p className={`${route.asPath === "/about" && "text-ring-color"} cursor-pointer text-base`}>About</p></Link>
           </div>
-          <div className="my-auto mr-8">
-            <Link href="/solutions">Solutions</Link>
+          <div className="my-auto mr-10">
+            <Link href="/solutions"><p className={`${route.asPath === "/solutions" && "text-ring-color"} cursor-pointer text-base`}>SOLUTION</p></Link>
           </div>
-          <div className="my-auto mr-8">
-            <Link href="/contact">Contact</Link>
+          <div className="my-auto">
+            <Link href="/contact"><p className={`${route.asPath === "/contact" && "text-ring-color"} cursor-pointer text-base`}>CONTACT</p></Link>
           </div>
         </div>
       </div>
@@ -39,13 +41,13 @@ const Navigation = () => {
           <div className="mt-72 text-center text-3xl font-semibold text-seccondery">
             <button
               onClick={() => setOpen(!open)}
-              className="absolute top-5 right-5"
+              className="absolute top-7 right-5"
             >
               <img
                 src="images/icon/cross.png"
                 alt=""
                 width={35}
-                className="rotate-5"
+                className=""
               />
             </button>
             <div onClick={() => setOpen(!open)}>

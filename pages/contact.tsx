@@ -49,29 +49,29 @@ const Contact: NextPage = () => {
   return (
     <div>
       <Layout>
-        <div className="bg-fill pb-28">
+        <div className="">
           <Navigation />
-          <div className="container mx-auto mt-16 px-5 md:mt-91px md:px-0 lg:max-w-container">
-            <h1 className="text-4xl font-bold text-primary">Contact</h1>
+          <div className="bg-contact-banner bg-cover bg-center py-10 md:py-18">
+            <h1 className="text-4xl md:text-5xl font-light text-primary container mx-auto px-5 md:px-0 lg:max-w-container">Contact Us</h1>
           </div>
         </div>
-        <div className="-mt-14 rounded-large bg-white px-5 pt-14  md:px-0 md:pt-20">
+        <div className="bg-white px-5 pt-14  md:px-0 md:pt-20">
           <div className="container mx-auto grid gap-10 md:gap-20 lg:max-w-container lg:grid-cols-2">
             <div>
               <img
-                src="/images/Logo_2.png"
-                className="md:w-12/12 w-7/12"
+                src="/images/Logo.png"
+                className=""
                 alt=""
-                width=""
+                width="500px"
               />
               <div className="mt-7 md:mt-56.59px">
                 <h3 className="text-2xl font-bold text-primary">Email</h3>
-                <p className="mt-3 font-light text-third">
+                <p className="mt-3 font-extralight text-third text-xl">
                   liquidity@waterfort.io
                 </p>
               </div>
             </div>
-            <div>
+            <div className='mb-20'>
               <Formik
                 initialValues={{
                   name: '',
@@ -101,12 +101,12 @@ const Contact: NextPage = () => {
                   <form onSubmit={handleSubmit}>
                     <div>
                       <label>
-                        <span className="text-seccondery">Name</span>
+                        <span className="text-seccondery">Name<span className='text-red-500 text-xl'>*</span></span>
                         <br />
                         <input
                           type="text"
                           placeholder="Input your name"
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full rounded-sm border-2 focus:ring-1 ring-ring-color px-3 py-2"
                           name="name"
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -119,12 +119,12 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Email</span>
+                        <span className="text-seccondery">Email<span className='text-red-500 text-xl'>*</span></span>
                         <br />
                         <input
                           type="email"
                           placeholder="Input your email"
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2"
                           name="email"
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -137,12 +137,12 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Phone</span>
+                        <span className="text-seccondery">Phone<span className='text-red-500 text-xl'>*</span></span>
                         <br />
                         <input
                           type="text"
                           placeholder="Input your phone number"
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2"
                           name="phone"
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -152,12 +152,12 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Company</span>
+                        <span className="text-seccondery">Company<span className='text-red-500 text-xl'>*</span></span>
                         <br />
                         <input
                           type="text"
                           placeholder="Input your company"
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2"
                           name="company"
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -167,12 +167,12 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Telegram name</span>
+                        <span className="text-seccondery">Telegram name<span className='text-red-500 text-xl'>*</span></span>
                         <br />
                         <input
                           type="text"
                           placeholder="Input your Telegram name"
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2"
                           name="telegram"
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -182,10 +182,10 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Country</span>
+                        <span className="text-seccondery">Country<span className='text-red-500 text-xl'>*</span></span>
                         <br />
                         <MySelect
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2 text-third"
+                          className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2 text-third"
                           name="country"
                         >
                           <option>Select yout country</option>
@@ -250,7 +250,7 @@ const Contact: NextPage = () => {
                         <br />
                         <textarea
                           placeholder="Input your message"
-                          className="outline-none mt-1 w-full rounded-sm border-2 px-3 py-2"
+                          className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2"
                           name="message"
                           onChange={handleChange}
                           onBlur={handleBlur}
@@ -260,7 +260,7 @@ const Contact: NextPage = () => {
                       </label>
                     </div>
                     <button
-                      className="button mt-7 rounded-md px-7 py-3 text-white"
+                      className="mt-7 bg-primary px-7 py-3 text-white"
                       type="submit"
                     >
                       Submit
@@ -269,9 +269,11 @@ const Contact: NextPage = () => {
                 )}
               </Formik>
               {(submitted) && (
-               <div className='text-center fixed bg-white p-5 border inset-x-0 sm:w-10/12 lg:w-7/12 xl:w-5/12 mx-auto modal shadow'>
-                 <p className='text-primary'>Contact request submitted! We will get back to you as soon as possible.</p>
-                 <button onClick={()=> setSubmitted(!submitted)} className='button px-7 py-1 rounded-sm text-white mt-5'>Ok</button>
+               <div className='text-center fixed bg-white p-5 border inset-x-0 sm:w-10/12 lg:w-5/12 xl:w-3/12 mx-auto modal shadow-2xl'>
+                 <img src="/images/icon/Group 52190.png" className='mx-auto' alt="" />
+                 <h2 className='text-primary text-xl mb-3'>Thank you for contacting us!</h2>
+                 <p className='text-sm text-blue-gray'>We have received your inquiry and are working to get back to you as soon as possible.</p>
+                 <button onClick={()=> setSubmitted(!submitted)} className='w-full py-1 bg-primary text-white mt-5'>Ok</button>
                </div>
               )}
             </div>
