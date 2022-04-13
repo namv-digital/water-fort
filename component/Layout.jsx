@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Water Fort</title>
+        <title>Waterfort</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='font-saolText'>

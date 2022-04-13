@@ -20,7 +20,7 @@ const solutionsDetails = () => {
               <p className="mt-4 text-xl text-seccondery">
                 Whether you are a financial institution, OTC desk, corporate
                 treasurer, prime broker, hedge fund, asset manager or high net
-                worth individual, WaterFort offers customizable liquidity and
+                worth individual, Waterfort offers customizable liquidity and
                 trading solutions.
               </p>
             </div>

@@ -10,7 +10,7 @@ const Banner = () => {
         The Leading Liquidity And Execution Solutions Provider In Crypto Markets
         </h1>
         <p className="mt-6 text-left text-sm text-seccondery md:text-xl md:w-8/12">
-          At WaterFort, we have been powering crypto liquidity across
+          At Waterfort, we have been powering crypto liquidity across
           institutions and platforms and building efficient cryptocurrency
           markets since 2018.{' '}
         </p>

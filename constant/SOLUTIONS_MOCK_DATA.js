@@ -1,7 +1,7 @@
 export const solutions = [
     {
         title : "OTC and Block Trading",
-        subtitle : "Get access to competitive quotes across the widest range of cryptocurrencies, with fast response times and instantaneous execution.",
+        subtitle : "Get access to industry-leading competitive price quotes and deep liquidity across the widest range of cryptocurrencies. Trade off-exchange, remain discreet and avoid slippage.",
         list : [
             "Competitive quotes with tight spreads, fast quote times with instant execution, and reliable liquidity in all market conditions.",
             "Coverage across the widest range of crypto pairs.",

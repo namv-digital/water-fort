@@ -15,6 +15,6 @@ export const service = [
        name : "ALGORITHMIC EXECUTION ORDER",
        link : "/solutions#algorithmic",
        img : "/images/icon/Al.png",
-       discription : "Optimize execution, reduce executioncost and market impact",
+       discription : `Optimize execution, reduce execution cost and market impact`,
    }
 ]

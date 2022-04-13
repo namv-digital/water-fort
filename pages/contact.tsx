@@ -137,7 +137,7 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Phone<span className='text-red-500 text-xl'>*</span></span>
+                        <span className="text-seccondery">Phone</span>
                         <br />
                         <input
                           type="text"
@@ -152,7 +152,7 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Company<span className='text-red-500 text-xl'>*</span></span>
+                        <span className="text-seccondery">Company</span>
                         <br />
                         <input
                           type="text"
@@ -167,7 +167,7 @@ const Contact: NextPage = () => {
                     </div>
                     <div className="mt-7">
                       <label>
-                        <span className="text-seccondery">Telegram name<span className='text-red-500 text-xl'>*</span></span>
+                        <span className="text-seccondery">Telegram Username</span>
                         <br />
                         <input
                           type="text"

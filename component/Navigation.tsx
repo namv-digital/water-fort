@@ -15,10 +15,10 @@ const Navigation = () => {
         </div>
         <div className="font-semibold text-seccondery md:flex">
           <div className="my-auto mr-10">
-            <Link href="/about"><p className={`${route.asPath === "/about" && "text-ring-color"} cursor-pointer text-base`}>About</p></Link>
+            <Link href="/about"><p className={`${route.asPath === "/about" && "text-ring-color"} cursor-pointer text-base`}>ABOUT</p></Link>
           </div>
           <div className="my-auto mr-10">
-            <Link href="/solutions"><p className={`${route.asPath === "/solutions" && "text-ring-color"} cursor-pointer text-base`}>SOLUTION</p></Link>
+            <Link href="/solutions"><p className={`${route.asPath === "/solutions" && "text-ring-color"} cursor-pointer text-base`}>SOLUTIONS</p></Link>
           </div>
           <div className="my-auto">
             <Link href="/contact"><p className={`${route.asPath === "/contact" && "text-ring-color"} cursor-pointer text-base`}>CONTACT</p></Link>
