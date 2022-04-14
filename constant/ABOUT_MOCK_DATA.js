@@ -16,7 +16,7 @@ export const about =[
         discription : "Work with a team familiar with traditional financial markets. Our team consolidates years of experience from top global and investment banks and exchanges combined with our crypto expertise. "
     },
     {
-        title : "High-Net-Worth individuals and Proprietary Traders",
+        title : "High-Net-Worth Individuals and Proprietary Traders",
         discription : "Leverage Waterfort’s deep liquidity for immediate pricing, advice and execution tools to navigate complex crypto markets. "
     }
 ]

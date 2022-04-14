@@ -171,7 +171,7 @@ const Contact: NextPage = () => {
                         <br />
                         <input
                           type="text"
-                          placeholder="Input your Telegram name"
+                          placeholder="Input your telegram username"
                           className="outline-none mt-1 w-full focus:ring-1 ring-ring-color rounded-sm border-2 px-3 py-2"
                           name="telegram"
                           onChange={handleChange}

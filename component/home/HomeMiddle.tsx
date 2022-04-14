@@ -8,10 +8,10 @@ const HomeMiddle = () => {
         {service.map((service) => (
           <div className='text-center md:text-left'>
             <img src={service.img} alt="" className="mx-auto md:mx-0" />
-            <h2 className="mt-27px text-2xl font-bold text-primary md:w-9/12">
+            <h2 className="mt-27px text-2xl font-bold text-primary md:w-2/3">
               {service.name}
             </h2>
-            <p className='text-base text-blue-gray mt-2'>
+            <p className='text-base text-blue-gray mt-2 md:w-2/3'>
               {service.discription}
             </p>
             <Link href={service.link}>
