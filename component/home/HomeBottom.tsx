@@ -13,7 +13,7 @@ const HomeBottom = () => {
           us to discover our liquidity and execution solutions for your needs.
         </p>
         <Link href="/contact">
-          <button className="mx-auto mt-10 flex justify-around bg-white px-5 py-2 font-sans font-semibold text-primary md:mx-0">
+          <button className="mx-auto mt-10 flex justify-around bg-white px-5 py-2 font-semibold text-primary md:mx-0">
             CONTACT US
             <img
               src="/images/icon/blackArrow.png"
