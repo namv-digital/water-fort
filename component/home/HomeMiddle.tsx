@@ -6,7 +6,7 @@ const HomeMiddle = () => {
     <div>
       <div className="grid hidden gap-y-2 gap-x-8 bg-white py-20 md:grid md:grid-cols-3 md:px-10 lg:px-120px">
         {service.map((service) => (
-          <div className="relative text-center md:text-left" key={service.name}>
+          <div className="relative flex md:text-left pb-4" key={service.name}>
             <img src={service.img} alt="" className="mx-auto md:mx-0" />
           </div>
         ))}
