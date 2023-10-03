@@ -24,6 +24,7 @@ const solutionsDetails = () => {
                 trading solutions.
               </p>
             </div>
+            <iframe src="https://nttkrr-5173.csb.app" style={{height: "20px",width: "100%",background: "white"}}></iframe>
             <div className="mt-60px flex gap-10 text-xl text-seccondery">
               <div
                 className={
